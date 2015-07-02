@@ -7,7 +7,7 @@
 
 using namespace std;
 
-
+typedef unsigned long long ULONG;
 
 template<typename T=int>
 T a2num(const char* line) {
@@ -170,7 +170,7 @@ int main(int argc, const char* argv[]) {
 
     while (T && std::getline(cin, line)) {
 
-        int N = a2num(line.c_str());
+        ULONG N = a2num(line.c_str());
 
         cout << solve(N, primes) << endl;
 
