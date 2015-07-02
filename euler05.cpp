@@ -6,6 +6,8 @@
 
 using namespace std;
 
+typedef unsigned long long ULONG;
+
 template<typename T=int>
 T a2num(const char* line) {
     T result = 0;
